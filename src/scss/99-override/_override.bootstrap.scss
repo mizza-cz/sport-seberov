@@ -1,0 +1,57 @@
+/*! purgecss start ignore */
+@media (min-width: 1548px) {
+  .container {
+    max-width: 90rem !important;
+  }
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  width: 100%;
+  max-width: 100% !important;
+}
+.container-fluid {
+  max-width: 96rem !important;
+  margin: 0 auto;
+  padding: 0 !important;
+}
+
+.bg-white {
+  background-color: var(--color-white) !important;
+}
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.text-secondary {
+  color: var(--color-text-secondary) !important;
+}
+.text-secondary-img {
+  color: var(--color-img-text);
+}
+.text-primary {
+  color: var(--color-primary) !important;
+}
+.text-white {
+  color: var(--color-white) !important;
+}
+.font-secondary {
+  font-family: var(--font-secondary), sans-serif;
+}
+.o-content.text-white {
+  color: var(--color-white) !important;
+  h3 {
+    color: var(--color-white) !important;
+  }
+  ul,
+  ol,
+  li {
+    color: var(--color-white) !important;
+  }
+  ul > li:before {
+    background: var(--color-white) !important;
+  }
+}
+/*! purgecss end ignore */

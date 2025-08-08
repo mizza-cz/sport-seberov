@@ -1,0 +1,86 @@
+/* БАЗА секции */
+.section-md {
+  grid-area: text;
+  width: 100%;
+  max-width: 100%;
+}
+.section-sm {
+  grid-area: media;
+  width: 100%;
+  max-width: 100%;
+}
+.section-sm img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "text"
+    "more"
+    "media";
+  gap: 24px;
+  align-items: start;
+}
+
+.section-more {
+  grid-area: more;
+  grid-column: 1 / -1;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.4s ease;
+  max-width: 100%;
+}
+
+.chev {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.chev img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.expand-btn[aria-expanded="true"] .chev {
+  transform: rotate(180deg);
+}
+
+@include media-breakpoint-up(xl) {
+  .section__row {
+    grid-template-columns:
+      minmax(0, calc((100% - 64px) * 644 / 1248))
+      minmax(0, calc((100% - 64px) * 604 / 1248));
+    grid-template-areas:
+      "text  media"
+      "more  more";
+    column-gap: 64px;
+    row-gap: 40px;
+  }
+
+  .section__row.section__row--reverse {
+    grid-template-columns:
+      minmax(0, calc((100% - 64px) * 604 / 1248))
+      minmax(0, calc((100% - 64px) * 644 / 1248));
+    grid-template-areas:
+      "media text"
+      "more  more";
+  }
+  .information-section__wrap {
+    .section__row.section__row--reverse {
+      align-items: normal;
+      grid-template-columns:
+        minmax(0, calc((100% - 64px) * 741 / 1536))
+        minmax(0, calc((100% - 64px) * 898 / 1536));
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-more {
+    transition: none;
+  }
+}

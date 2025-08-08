@@ -1,0 +1,17 @@
+.concept-section {
+  margin-top: 100px;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+  @include media-breakpoint-up(xxl) {
+    margin-bottom: 174px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}

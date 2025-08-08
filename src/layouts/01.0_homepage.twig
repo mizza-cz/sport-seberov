@@ -1,0 +1,24 @@
+{% extends "@components/base/base.twig" %}
+
+{% set title = "01.0_homepage" %}
+
+{% block main %}
+<div class="header__img">
+  <img
+    srcset="images/content/hero.jpg"
+    width="1440"
+    height="720"
+    alt="header"
+  />
+</div>
+{% include "@components/hero/hero.twig" %}
+{% include "@components/purpose-section/purpose-section.twig" %}
+{% include "@components/concept-section/concept-section.twig" %}
+{% include "@components/information-section/information-section.twig" %}
+{% include "@components/education-section/education-section.twig" %}
+{% include "@components/benefits-section/benefits-section.twig" %}
+{% include "@components/budget-section/budget-section.twig" %}
+{% include "@components/obligations-section/obligations-section.twig" %}
+  
+{% endblock %}
+ 

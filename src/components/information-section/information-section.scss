@@ -1,0 +1,35 @@
+.information-section {
+  margin-bottom: 40px;
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 60px;
+  }
+  .section-md {
+    .information-section__img {
+      width: 100%;
+      aspect-ratio: 835/614;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.section-img {
+  width: 100%;
+  aspect-ratio: 604/725;
+  height: auto;
+  @include media-breakpoint-down(lg) {
+    aspect-ratio: 604/600;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

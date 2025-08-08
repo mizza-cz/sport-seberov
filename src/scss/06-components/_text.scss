@@ -1,0 +1,60 @@
+.h1 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100%;
+  text-transform: uppercase;
+  @include media-breakpoint-down(lg) {
+    font-size: 54px;
+  }
+}
+.h2,
+.o-content h2 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  text-transform: uppercase;
+  @include media-breakpoint-down(lg) {
+    font-size: 40px;
+  }
+}
+.h3,
+.o-content h3 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  text-transform: uppercase;
+  @include media-breakpoint-down(lg) {
+    font-size: 30px;
+  }
+}
+.h5 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+  }
+}
+
+.text-secondary-xl {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  @include media-breakpoint-down(md) {
+    font-size: 24px;
+  }
+}
+.text-lg-bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

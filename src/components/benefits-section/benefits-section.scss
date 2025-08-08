@@ -1,0 +1,46 @@
+.benefits-section {
+  margin-bottom: 40px;
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 60px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 24px;
+    margin-bottom: 100px;
+    margin-bottom: 40px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 100px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 60px;
+    }
+    @include media-breakpoint-up(lg) {
+      gap: 64px 56px;
+    }
+    @include media-breakpoint-up(sm) {
+      gap: 40px 32px;
+    }
+    li {
+      width: 100%;
+      @include media-breakpoint-up(lg) {
+        width: calc(100% / 3 - 2.35rem);
+      }
+      @include media-breakpoint-up(sm) {
+        width: calc(100% / 2 - 2.35rem);
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

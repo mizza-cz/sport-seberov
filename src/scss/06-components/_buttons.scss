@@ -1,0 +1,27 @@
+[class^="button"] {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  transition: background-color 0.2s;
+  text-decoration-color: transparent !important;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  align-items: center;
+  font-family: var(--font-primary), sans-serif;
+  svg path {
+    transition: all 0.2s;
+  }
+}
+.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  &:hover {
+    background-color: #af0015;
+  }
+}

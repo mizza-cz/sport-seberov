@@ -1,0 +1,55 @@
+.header {
+  padding-top: 24px;
+  overflow-x: hidden;
+  @include media-breakpoint-up(lg) {
+    padding-top: 64px;
+  }
+  @include media-breakpoint-up(md) {
+    padding-top: 40px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 64px;
+    flex-wrap: wrap-reverse;
+    align-items: flex-end;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+    }
+    .h1 {
+      max-width: 640px;
+    }
+  }
+  .logo {
+    width: 200px;
+    height: 4rem;
+    display: block;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1440/700;
+    margin-bottom: 40px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 100px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 60px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
