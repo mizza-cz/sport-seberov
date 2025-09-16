@@ -1,0 +1,23 @@
+.stateProject-section {
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 60px;
+  }
+  .section-img {
+    aspect-ratio: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .section-sm {
+    height: 100%;
+  }
+}

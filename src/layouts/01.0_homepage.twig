@@ -1,8 +1,5 @@
-{% extends "@components/base/base.twig" %}
-
-{% set title = "01.0_homepage" %}
-
-{% block main %}
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %}
 <div class="header__img">
   <img
     srcset="images/content/hero.jpg"
@@ -11,14 +8,14 @@
     alt="header"
   />
 </div>
-{% include "@components/hero/hero.twig" %}
-{% include "@components/purpose-section/purpose-section.twig" %}
-{% include "@components/concept-section/concept-section.twig" %}
-{% include "@components/information-section/information-section.twig" %}
-{% include "@components/education-section/education-section.twig" %}
-{% include "@components/benefits-section/benefits-section.twig" %}
-{% include "@components/budget-section/budget-section.twig" %}
-{% include "@components/obligations-section/obligations-section.twig" %}
-  
-{% endblock %}
- 
+{% include "@components/hero/hero.twig" %} {% include
+"@components/childcare-section/childcare-section.twig" %} {% include
+"@components/stateProject-section/stateProject-section.twig" %} {% include
+"@components/freeTime-section/freeTime-section.twig" %} {% include
+"@components/purpose-section/purpose-section.twig" %} {% include
+"@components/concept-section/concept-section.twig" %} {% include
+"@components/information-section/information-section.twig" %} {% include
+"@components/education-section/education-section.twig" %} {% include
+"@components/benefits-section/benefits-section.twig" %} {% include
+"@components/budget-section/budget-section.twig" %} {% include
+"@components/obligations-section/obligations-section.twig" %} {% endblock %}

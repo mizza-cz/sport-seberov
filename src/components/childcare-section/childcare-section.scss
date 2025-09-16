@@ -1,0 +1,48 @@
+.childcare-section__img {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  @include media-breakpoint-up(xl) {
+    margin-top: 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: 60px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.childcare-section {
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 60px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+    .h2 {
+      white-space: nowrap;
+    }
+    li {
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+    }
+    li p {
+      span {
+        display: block;
+        font-weight: 700;
+      }
+    }
+  }
+}
