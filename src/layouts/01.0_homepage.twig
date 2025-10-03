@@ -12,8 +12,21 @@ block main %}
 "@components/concept-section/concept-section.twig" %} {% include
 "@components/information-section/information-section.twig" %} {% include
 "@components/budget-section/budget-section.twig" %} {% include
-"@components/freeTime-section/freeTime-section.twig" %} {% include
-"@components/education-section/education-section.twig" %} {% include
+"@components/freeTime-section/freeTime-section.twig" %}
+
+<section class="freeTime-section">
+  <div class="container">
+    <h3 class="h2 mb-6 text-primary text-center">
+      MOODBOARD BUDOVY AKADEMIE S MAXIMÁLNÍ ROZLOHOU 3 500 m2
+    </h3>
+
+    <div class="freeTime-section__img">
+      <img src="images/content/pece-o-deti.jpg" alt="" />
+    </div>
+  </div>
+</section>
+
+{% include "@components/education-section/education-section.twig" %} {% include
 "@components/obligations-section/obligations-section.twig" %} {% include
 "@components/benefits-section/benefits-section.twig" %} {% include
-"@components/faq-section/faq-section.twig" %}   {% endblock %}
+"@components/faq-section/faq-section.twig" %} {% endblock %}
