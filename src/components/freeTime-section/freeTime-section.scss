@@ -17,3 +17,12 @@
     }
   }
 }
+.freeTime-section__img-bottom {
+  display: flex;
+  img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 650/370;
+  }
+}
