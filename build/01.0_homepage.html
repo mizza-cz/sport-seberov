@@ -51,6 +51,11 @@
 					<li>
 						<a href="#faqSection">FAQ</a>
 					</li>
+					<li>
+						<a href="#contactForm">
+							Kontaktujte nás
+						</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -712,6 +717,20 @@
 							</p>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section class="form-section" id="contactForm">
+				<div class="container">
+					<h6 class="h2 text-primary mb-6 text-center">Kontaktujte nás</h6>
+					<form class="contactForm" action="/submit" method="post">
+						<label for="email">Email*</label>
+						<input type="email" id="email" name="email" required />
+
+						<label for="firstName">Jméno a Přijímení</label>
+						<input type="text" id="firstName" name="firstName" />
+
+						<button type="submit">Odeslat</button>
+					</form>
 				</div>
 			</section>
 		</main>
